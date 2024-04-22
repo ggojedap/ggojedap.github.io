@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .eye {
+            color: #DDD;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="white-version home-sticky spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
@@ -273,7 +279,7 @@
                                     <p>
                                         <span class="text-dark">Visual Analytics & Big Data</span><br>
                                         <span class="fw-light small" style="color: black;">Master Degree</span> <span
-                                            class="small">[Expected grad. March 2024]</span><br>
+                                            class="small">[Expected grad. July 2024]</span><br>
                                         Universidad Internacional de La Rioja, Spain
                                     </p>
                                     <p>
@@ -528,7 +534,11 @@
                                     <img src="assets/images/logo/logos-circle.png" alt="logo">
                                 </a>
                             </div>
-                            <p class="description mt--30">Gustavo Ojeda<br>Bogotá, Colombia © 2023</p>
+                            <p class="description mt--30">Gustavo Ojeda<br>Bogotá, Colombia © 2024</p>
+                            <p>
+                                <i class="eye" id="eye-on" data-feather="eye"></i>
+                                <i class="eye" id="eye-off" data-feather="eye-off"></i>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -605,6 +615,7 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        let show_specials = false;
         particlesJS('particles-js',
 
             {
@@ -728,84 +739,127 @@
 
         let portfolio_data = [
             {
+                nombre: "Public equity policy for women",
+                url: "https://pacarina.net/demos/baseline/",
+                description: "This project shows some results from the baseline for the implementation of Public Policy on women and gender equality in Bogotá, Colombia. This survey was managed by the Women and Gender Equality Observatory, OMEG, attached to the Knowledge Management Department, as part of the Secretariat of Women Affairs in Bogotá, between June and October 2021.",
+                category: "Storytelling, Report",
+                img: "assets/images/portfolio/gifs/thumb-baseline.jpg",
+                hidden: false
+            },
+            {
+                nombre: "Electoral violence against women",
+                url: "https://app.powerbi.com/view?r=eyJrIjoiYmI2NTQyMmYtYjZlNy00NDVjLWI2ZTItOTU5ZjI4YzkwNzYyIiwidCI6IjU3N2ZjMWQ4LTA5MjItNDU4ZS04N2JmLWVjNGY0NTVlYjYwMCIsImMiOjR9",
+                description: "This dashboard presents data from a survey answered by women who participated in the most recent electoral process in Colombia, investigating the behaviors of violence against women with a vocation for leadership, which are exercised under circumstances motivated by gender aspects, with the aim of discouraging their political participation in their own territories.",
+                category: "Dashboard",
+                img: "assets/images/portfolio/gifs/thumb-violencia-electoral.jpg",
+                hidden: false
+            },
+            {
+                nombre: "Legal needs of the LGBTI+ population",
+                url: "https://app.powerbi.com/view?r=eyJrIjoiZGE0MTMxNGEtYzZmMy00Mjk0LWI5ZDgtMzA1NDAwMTc5NzM3IiwidCI6IjYyMDE0MDE2LTlkYjQtNDRjMi1iZjMzLWU0MzY2YjgyZmRhYSIsImMiOjR9",
+                description: "This dashboard presents data on in-person assistance to the legal needs of people who identify with diverse sexual identities or orientations at the time of registration at the Houses of Justice in Bogotá. This represents the institutional effort to accurately capture information on the differential approach in the provision of services offered by the city government.",
+                category: "Dashboard",
+                img: "assets/images/portfolio/gifs/thumb-lgbti.jpg",
+                hidden: true
+            },
+            {
+                nombre: "Monitoring of homicides in Bogotá",
+                url: "https://app.powerbi.com/view?r=eyJrIjoiN2JkNmViOWEtYWMxMy00NzM2LWIyMDItNzA1NDAwODYwNWNiIiwidCI6IjYyMDE0MDE2LTlkYjQtNDRjMi1iZjMzLWU0MzY2YjgyZmRhYSIsImMiOjR9",
+                description: "This dashboard shows the data curated in detail within the Bogotá Security Secretariat, in order to monitor the homicides that occurred in the study period, emphasizing the causes and circumstances surrounding each case.",
+                category: "Dashboard",
+                img: "assets/images/portfolio/gifs/thumb-homicidios.jpg",
+                hidden: true
+            },
+            {
                 nombre: "Everyone in tune with justice",
                 url: "https://www.todosensintonia.com/",
                 description: "This is an application funded by USAID, aimed at creating a pedagogical impact on selected populations, to enhance understanding of access and administration of justice. It allowed capturing data as users interacted with conflict stories from daily life. Additionally, an interactive report was developed to showcase the project's overall results.",
                 category: "App development",
-                img: "assets/images/portfolio/gifs/thumb-sintonia.jpg"
+                img: "assets/images/portfolio/gifs/thumb-sintonia.jpg",
+                hidden: false
             },
             {
                 nombre: "The color of your truth",
                 url: "https://www.pacarina.net/projects/generacionv/",
                 description: "This is an interactive report showcasing the results of a virtual survey (non-representative) with the participation of over 20,000 individuals. It was commissioned by the Truth Commission in the context of the search for peace in Colombia. The report enables users to access the survey questions and filter the results based on demographic characteristics of the participating population.",
                 category: "Survey, Interactive report",
-                img: "assets/images/portfolio/gifs/thumb-color-verdad.jpg"
+                img: "assets/images/portfolio/gifs/thumb-color-verdad.jpg",
+                hidden: false
             },
             {
                 nombre: "Assassination of social leaders in Colombia",
                 url: "https://pacarina.net/projects/leaders-3.0/",
                 description: "This is an interactive map, embedded within another project, depicting the issue of social leaders' murders in Colombia (environment, minorities, etc.). Each crime is represented as a particle on the map of Colombia, which can also be clustered based on locality, severity of the problem by region, and department name. Clicking on a particle allows viewing the specific data of that individual.",
                 category: "Particles, Maps",
-                img: "assets/images/portfolio/gifs/thumb-leaders.jpg"
+                img: "assets/images/portfolio/gifs/thumb-leaders.jpg",
+                hidden: false
             },
             {
-                nombre: "Application for universal data visualization",
+                nombre: "General purpose app for data visualization",
                 url: "https://omeg.sdmujer.gov.co/",
                 description: "This application allows loading independently developed visualization dashboards within the OMEG (Observatory of Women and Gender Equity). Its development has streamlined the publication timelines of the displayed indicators. Additionally, it is technology-agnostic for dashboard construction, supporting tools such as Power BI and Tableau, and features a native utility for responsive dashboards, based on D3.js.",
                 category: "App development, Dashboard",
-                img: "assets/images/portfolio/gifs/thumb-omeg.jpg"
+                img: "assets/images/portfolio/gifs/thumb-omeg.jpg",
+                hidden: false
             },
             {
                 nombre: "Storytelling performance optimization on electoral results",
                 url: "https://www.pacarina.net/demos/elecciones-3/",
                 description: "This is an optimization exercise of an existing project developed by Professor John Guerra, showcasing the results of the 2018 presidential elections in Colombia. The focus lies in simplifying the source code and optimizing data loading times and overall performance of animations. It utilizes a force simulation provided by D3.js, with data sourced from the official electoral body in Colombia.",
                 category: "Storytelling, App optimization, Particles",
-                img: "assets/images/portfolio/gifs/thumb-elecciones.jpg"
+                img: "assets/images/portfolio/gifs/thumb-elecciones.jpg",
+                hidden: true
             },
             {
                 nombre: "Safe Spaces Program in Bogotá",
                 url: "https://espaciosseguros.sdmujer.gov.co/",
-                description: "This is a collection of maps developed for the District Secretariat of Women in Bogotá, which conducted a campaign to counter gender-based violence in the city. It features maps organized by districts, displaying 'Safe Spaces', which are commercial establishments that have entered into an agreement to assist victims in feeling safe while receiving information about accessing psychological and legal support.",
+                description: "This is a collection of maps developed for the Secretariat of Women Affairs in Bogotá, which conducted a campaign to counter gender-based violence in the city. It features maps organized by districts, displaying 'Safe Spaces', which are commercial establishments that have entered into an agreement to assist victims in feeling safe while receiving information about accessing psychological and legal support.",
                 category: "Maps",
-                img: "assets/images/portfolio/gifs/thumb-espacios-seguros.jpg"
+                img: "assets/images/portfolio/gifs/thumb-espacios-seguros.jpg",
+                hidden: false
             },
             {
                 nombre: "Crimes by neighborhood in Bogotá",
                 url: "https://www.pacarina.net/demos/mapasdmujer/",
                 description: "This map showcases a proof of concept of how safe space data in Bogotá could be visualized, along with the administrative division of the city (by districts and neighborhoods). It also features a layer selector, allowing users to choose the information they want to access, including the incidence of sexual crimes and domestic violence.",
                 category: "Maps",
-                img: "assets/images/portfolio/gifs/thumb-mapa-delitos.jpg"
+                img: "assets/images/portfolio/gifs/thumb-mapa-delitos.jpg",
+                hidden: false
             },
             {
                 nombre: "Classical Composers Timeline",
                 url: "https://www.pacarina.net/demos/timeline/",
                 description: "This visualization is a timeline aiming to showcase the chronology of the most renowned classical music composers in history. Each horizontal bar represents a composer, including key dates, nationality, and full name. Additionally, it features a navigation tool allowing users to filter composers based on their musical style. Furthermore, it is possible to reduce the amount of visible data at any given moment.",
                 category: "Particles, timeline",
-                img: "assets/images/portfolio/gifs/thumb-composers-timeline.jpg"
+                img: "assets/images/portfolio/gifs/thumb-composers-timeline.jpg",
+                hidden: true
             },
             {
                 nombre: "Soccer goal scoring analysis",
                 url: "https://www.youtube.com/watch?v=w13_zJ9hkKw",
                 description: "This video showcases the animation developed within 'MetroFútbol', a statistical data management tool for the professional soccer league in Colombia. In this particular capture, it displays the locations of the players who scored goals and the timing of each goal during the match. The original tool included a range of filters to select the tournament year and adjust the animation speed.",
                 category: "Video, particles",
-                img: "assets/images/portfolio/gifs/thumb-soccer-goals.jpg"
+                img: "assets/images/portfolio/gifs/thumb-soccer-goals.jpg",
+                hidden: false
             },
             {
                 nombre: "Soccer assists clusters",
                 url: "https://www.youtube.com/watch?v=4mzSCxcQ9dY",
                 description: "This video displays the main player's clusters within the field, determined by their passes, assists, and goals. The size of each particle indicates the significance or frequency of that particular player, while the color represents the team they played for. This solution was implemented using a force simulation based on D3.js.",
                 category: "Video, particles",
-                img: "assets/images/portfolio/gifs/thumb-soccer-networks.jpg"
+                img: "assets/images/portfolio/gifs/thumb-soccer-networks.jpg",
+                hidden: false
             },
             {
                 nombre: "Assassination of leaders in Colombia",
                 url: "https://www.youtube.com/watch?v=FsR_IVHTt3g",
                 description: "This video is an attempt to illustrate the dramatic gravity of social leaders' murders in Colombia. A succession of crimes, whose impact on communities is depicted by the accumulative size of the particles, fills the screen as each victim is represented. This visual chronology was presented to be shown during the launch of a human rights panel discussion held in Bogotá in July 2019.",
                 category: "Video, particles",
-                img: "assets/images/portfolio/gifs/thumb-leaders-video.jpg"
+                img: "assets/images/portfolio/gifs/thumb-leaders-video.jpg",
+                hidden: false
             }
         ];
-        
+
         function updateModalContent(id) {
             $("#pm-title").html(`<span>${portfolio_data[id].category}</span> ${portfolio_data[id].nombre}`);
             $("#pm-url").attr("href", portfolio_data[id].url);
@@ -816,7 +870,7 @@
         $(document).ready(function () {
             portfolio_data.forEach((e, i) => {
                 $("#portfolio-container").append(`<div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
-                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30 ${e.hidden ? 'hidden' : 'visible'}">
                         <div class="card new-portfolio-card border-0">
                             <img src="${e.img}" class="card-img-top"
                                 alt="${e.nombre}" onclick="updateModalContent(${i});" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
@@ -827,6 +881,29 @@
                         </div>
                     </div>`);
             });
+
+            $("#eye-on").click(function (e) {
+                show_specials = true;
+                updateEyes();
+            });
+            $("#eye-off").click(function (e) {
+                show_specials = false;
+                updateEyes();
+            });
+
+            function updateEyes() {
+                if (show_specials) {
+                    $("#portfolio-container > .col-12.hidden").css("display", "block");
+                    $("#eye-off").css("display", "inline-block");
+                    $("#eye-on").css("display", "none");
+                } else {
+                    $("#portfolio-container > .col-12.hidden").css("display", "none");
+                    $("#eye-off").css("display", "none");
+                    $("#eye-on").css("display", "inline-block");
+                }
+            }
+
+            updateEyes();
         });
     </script>
 </body>
