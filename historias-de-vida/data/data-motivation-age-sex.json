@@ -1,0 +1,16 @@
+[
+  { "age": "15-19", "unicaMujeres": 35, "unicaHombres": 35, "negocioMujeres": 40, "negocioHombres": 41 },
+  { "age": "20-24", "unicaMujeres": 30, "unicaHombres": 28, "negocioMujeres": 45, "negocioHombres": 46 },
+  { "age": "25-29", "unicaMujeres": 29, "unicaHombres": 27, "negocioMujeres": 44, "negocioHombres": 46 },
+  { "age": "30-34", "unicaMujeres": 30, "unicaHombres": 27, "negocioMujeres": 41, "negocioHombres": 46 },
+  { "age": "35-39", "unicaMujeres": 33, "unicaHombres": 29, "negocioMujeres": 39, "negocioHombres": 44 },
+  { "age": "40-44", "unicaMujeres": 35, "unicaHombres": 31, "negocioMujeres": 38, "negocioHombres": 43 },
+  { "age": "45-49", "unicaMujeres": 38, "unicaHombres": 33, "negocioMujeres": 36, "negocioHombres": 40 },
+  { "age": "50-54", "unicaMujeres": 41, "unicaHombres": 35, "negocioMujeres": 33, "negocioHombres": 38 },
+  { "age": "55-59", "unicaMujeres": 43, "unicaHombres": 37, "negocioMujeres": 31, "negocioHombres": 36 },
+  { "age": "60-64", "unicaMujeres": 44, "unicaHombres": 39, "negocioMujeres": 30, "negocioHombres": 33 },
+  { "age": "65-69", "unicaMujeres": 45, "unicaHombres": 40, "negocioMujeres": 29, "negocioHombres": 31 },
+  { "age": "70-74", "unicaMujeres": 46, "unicaHombres": 42, "negocioMujeres": 26, "negocioHombres": 30 },
+  { "age": "75-79", "unicaMujeres": 47, "unicaHombres": 42, "negocioMujeres": 26, "negocioHombres": 30 },
+  { "age": "80-84", "unicaMujeres": 47, "unicaHombres": 45, "negocioMujeres": 24, "negocioHombres": 28 }
+]

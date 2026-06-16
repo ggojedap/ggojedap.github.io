@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Oportunidad de negocio",
+    "value": 37
+  },
+  {
+    "category": "Única alternativa de ingresos",
+    "value": 36
+  },
+  {
+    "category": "Ejercer el oficio, carrera o profesión",
+    "value": 9
+  },
+  {
+    "category": "Completar el ingreso familiar o mejorar el ingreso",
+    "value": 9
+  },
+  {
+    "category": "Tradición familiar o herencia",
+    "value": 7
+  },
+  {
+    "category": "No tenía la experiencia o formación requerida",
+    "value": 1
+  },
+  {
+    "category": "Otro",
+    "value": 1
+  }
+]

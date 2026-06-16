@@ -1,0 +1,17 @@
+[
+  { "age:": "15-19", "fijoMujeres:": 43, "fijoHombres:": 48, "viviendaMujeres:": 19, "viviendaHombres:": 12 },
+  { "age:": "20-24", "fijoMujeres:": 58, "fijoHombres:": 66, "viviendaMujeres:": 18, "viviendaHombres:": 11 },
+  { "age:": "25-29", "fijoMujeres:": 63, "fijoHombres:": 73, "viviendaMujeres:": 18, "viviendaHombres:": 9 },
+  { "age:": "30-34", "fijoMujeres:": 63, "fijoHombres:": 74, "viviendaMujeres:": 20, "viviendaHombres:": 9 },
+  { "age:": "35-39", "fijoMujeres:": 62, "fijoHombres:": 73, "viviendaMujeres:": 20, "viviendaHombres:": 10 },
+  { "age:": "40-44", "fijoMujeres:": 60, "fijoHombres:": 72, "viviendaMujeres:": 21, "viviendaHombres:": 10 },
+  { "age:": "45-49", "fijoMujeres:": 58, "fijoHombres:": 69, "viviendaMujeres:": 23, "viviendaHombres:": 11 },
+  { "age:": "50-54", "fijoMujeres:": 55, "fijoHombres:": 65, "viviendaMujeres:": 25, "viviendaHombres:": 12 },
+  { "age:": "55-59", "fijoMujeres:": 52, "fijoHombres:": 63, "viviendaMujeres:": 28, "viviendaHombres:": 13 },
+  { "age:": "60-64", "fijoMujeres:": 49, "fijoHombres:": 59, "viviendaMujeres:": 31, "viviendaHombres:": 15 },
+  { "age:": "65-69", "fijoMujeres:": 46, "fijoHombres:": 54, "viviendaMujeres:": 33, "viviendaHombres:": 17 },
+  { "age:": "70-74", "fijoMujeres:": 43, "fijoHombres:": 50, "viviendaMujeres:": 37, "viviendaHombres:": 20 },
+  { "age:": "75-79", "fijoMujeres:": 42, "fijoHombres:": 48, "viviendaMujeres:": 40, "viviendaHombres:": 23 },
+  { "age:": "80-84", "fijoMujeres:": 44, "fijoHombres:": 45, "viviendaMujeres:": 40, "viviendaHombres:": 26 },
+  { "age:": "85 y más", "fijoMujeres:": 58, "fijoHombres:": 58, "viviendaMujeres:": 33, "viviendaHombres:": 24 }
+]

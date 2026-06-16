@@ -1,0 +1,17 @@
+[
+  { "age:": "15-19", "ahorroMujeres:": 62, "ahorroHombres:": 65, "prestamoMujeres:": 14, "prestamoHombres:": 11 },
+  { "age:": "20-24", "ahorroMujeres:": 55, "ahorroHombres:": 57, "prestamoMujeres:": 19, "prestamoHombres:": 18 },
+  { "age:": "25-29", "ahorroMujeres:": 51, "ahorroHombres:": 53, "prestamoMujeres:": 26, "prestamoHombres:": 24 },
+  { "age:": "30-34", "ahorroMujeres:": 50, "ahorroHombres:": 52, "prestamoMujeres:": 29, "prestamoHombres:": 27 },
+  { "age:": "35-39", "ahorroMujeres:": 50, "ahorroHombres:": 52, "prestamoMujeres:": 29, "prestamoHombres:": 28 },
+  { "age:": "40-44", "ahorroMujeres:": 50, "ahorroHombres:": 53, "prestamoMujeres:": 29, "prestamoHombres:": 28 },
+  { "age:": "45-49", "ahorroMujeres:": 52, "ahorroHombres:": 55, "prestamoMujeres:": 27, "prestamoHombres:": 26 },
+  { "age:": "50-54", "ahorroMujeres:": 54, "ahorroHombres:": 57, "prestamoMujeres:": 25, "prestamoHombres:": 24 },
+  { "age:": "55-59", "ahorroMujeres:": 55, "ahorroHombres:": 60, "prestamoMujeres:": 24, "prestamoHombres:": 23 },
+  { "age:": "60-64", "ahorroMujeres:": 59, "ahorroHombres:": 63, "prestamoMujeres:": 21, "prestamoHombres:": 20 },
+  { "age:": "65-69", "ahorroMujeres:": 62, "ahorroHombres:": 66, "prestamoMujeres:": 19, "prestamoHombres:": 18 },
+  { "age:": "70-74", "ahorroMujeres:": 65, "ahorroHombres:": 69, "prestamoMujeres:": 16, "prestamoHombres:": 15 },
+  { "age:": "75-79", "ahorroMujeres:": 71, "ahorroHombres:": 72, "prestamoMujeres:": 12, "prestamoHombres:": 13 },
+  { "age:": "80-84", "ahorroMujeres:": 74, "ahorroHombres:": 73, "prestamoMujeres:": 10, "prestamoHombres:": 11 },
+  { "age:": "85 y más", "ahorroMujeres:": 72, "ahorroHombres:": 73, "prestamoMujeres:": 11, "prestamoHombres:": 11 }
+]
