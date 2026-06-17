@@ -1,0 +1,34 @@
+[
+  {
+    "source": "Ahorros personales",
+    "value": 56
+  },
+  {
+    "source": "Préstamos bancarios",
+    "value": 24
+  },
+  {
+    "source": "Préstamos familiares",
+    "value": 13
+  },
+  {
+    "source": "Prestamistas",
+    "value": 3
+  },
+  {
+    "source": "No requirió financiamiento",
+    "value": 2
+  },
+  {
+    "source": "Otro",
+    "value": 1
+  },
+  {
+    "source": "Capital semilla",
+    "value": 1
+  },
+  {
+    "source": "No sabe",
+    "value": 0
+  }
+]

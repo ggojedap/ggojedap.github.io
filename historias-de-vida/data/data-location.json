@@ -1,0 +1,18 @@
+[
+  {
+    "categoria": "Establecimiento fijo",
+    "valor": 60
+  },
+  {
+    "categoria": "Vivienda con actividad económica visible",
+    "valor": 18
+  },
+  {
+    "categoria": "Puesto móvil",
+    "valor": 18
+  },
+  {
+    "categoria": "Establecimiento semifijo",
+    "valor": 4
+  }
+]

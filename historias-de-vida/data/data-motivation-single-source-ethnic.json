@@ -1,0 +1,37 @@
+[
+  {
+    "group:": "Negro/a, mulato/a, afrodescendiente, afrocolombiano/a",
+    "mujeres:": 48,
+    "hombres:": 43
+  },
+  {
+    "group:": "Indígena",
+    "mujeres:": 44,
+    "hombres:": 38
+  },
+  {
+    "group:": "No sabe / no responde",
+    "mujeres:": 43,
+    "hombres:": 40
+  },
+  {
+    "group:": "Palenquero/a de San Basilio",
+    "mujeres:": 41,
+    "hombres:": 33
+  },
+  {
+    "group:": "Ningún grupo étnico",
+    "mujeres:": 37,
+    "hombres:": 33
+  },
+  {
+    "group:": "Raizal del Archipiélago de San Andrés, Providencia",
+    "mujeres:": 30,
+    "hombres:": 32
+  },
+  {
+    "group:": "Gitano/a o Rrom",
+    "mujeres:": 10,
+    "hombres:": 21
+  }
+]

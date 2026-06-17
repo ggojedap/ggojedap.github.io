@@ -1,0 +1,51 @@
+[
+  {
+    "group": "Ningún grupo étnico",
+    "establecimiento_mujeres": 58,
+    "establecimiento_hombres": 66,
+    "vivienda_actividad_economica_mujeres": 23,
+    "vivienda_actividad_economica_hombres": 12
+  },
+  {
+    "group": "Raizal del Archipiélago de San Andrés, Providencia",
+    "establecimiento_mujeres": 58,
+    "establecimiento_hombres": 58,
+    "vivienda_actividad_economica_mujeres": 19,
+    "vivienda_actividad_economica_hombres": 10
+  },
+  {
+    "group": "No sabe / no responde",
+    "establecimiento_mujeres": 48,
+    "establecimiento_hombres": 58,
+    "vivienda_actividad_economica_mujeres": 29,
+    "vivienda_actividad_economica_hombres": 14
+  },
+  {
+    "group": "Indígena",
+    "establecimiento_mujeres": 37,
+    "establecimiento_hombres": 45,
+    "vivienda_actividad_economica_mujeres": 29,
+    "vivienda_actividad_economica_hombres": 19
+  },
+  {
+    "group": "Negro/a, mulato/a, afrodescendiente, afrocolombiano/a",
+    "establecimiento_mujeres": 37,
+    "establecimiento_hombres": 51,
+    "vivienda_actividad_economica_mujeres": 38,
+    "vivienda_actividad_economica_hombres": 19
+  },
+  {
+    "group": "Palenquero/a de San Basilio",
+    "establecimiento_mujeres": 15,
+    "establecimiento_hombres": 32,
+    "vivienda_actividad_economica_mujeres": 23,
+    "vivienda_actividad_economica_hombres": 15
+  },
+  {
+    "group": "Gitano/a o Rrom",
+    "establecimiento_mujeres": 14,
+    "establecimiento_hombres": 23,
+    "vivienda_actividad_economica_mujeres": 14,
+    "vivienda_actividad_economica_hombres": 10
+  }
+]

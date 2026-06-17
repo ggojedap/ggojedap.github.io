@@ -1,0 +1,51 @@
+[
+  {
+    "group": "Raizal del Archipiélago de San Andrés, Providencia",
+    "ahorros_mujeres": 71,
+    "ahorros_hombres": 72,
+    "prestamos_bancarios_mujeres": 14,
+    "prestamos_bancarios_hombres": 14
+  },
+  {
+    "group": "Gitano/a o Rrom",
+    "ahorros_mujeres": 60,
+    "ahorros_hombres": 72,
+    "prestamos_bancarios_mujeres": 25,
+    "prestamos_bancarios_hombres": 7
+  },
+  {
+    "group": "Negro/a, mulato/a, afrodescendiente, afrocolombiano/a",
+    "ahorros_mujeres": 59,
+    "ahorros_hombres": 60,
+    "prestamos_bancarios_mujeres": 21,
+    "prestamos_bancarios_hombres": 21
+  },
+  {
+    "group": "Palenquero/a de San Basilio",
+    "ahorros_mujeres": 59,
+    "ahorros_hombres": 55,
+    "prestamos_bancarios_mujeres": 18,
+    "prestamos_bancarios_hombres": 17
+  },
+  {
+    "group": "No sabe / no responde",
+    "ahorros_mujeres": 57,
+    "ahorros_hombres": 59,
+    "prestamos_bancarios_mujeres": 22,
+    "prestamos_bancarios_hombres": 21
+  },
+  {
+    "group": "Ningún grupo étnico",
+    "ahorros_mujeres": 54,
+    "ahorros_hombres": 58,
+    "prestamos_bancarios_mujeres": 25,
+    "prestamos_bancarios_hombres": 23
+  },
+  {
+    "group": "Indígena",
+    "ahorros_mujeres": 53,
+    "ahorros_hombres": 54,
+    "prestamos_bancarios_mujeres": 28,
+    "prestamos_bancarios_hombres": 27
+  }
+]
