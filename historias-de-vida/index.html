@@ -14,9 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Historias de Vida - Censo Económico Nacional Urbano</title>
-    <script type="module" crossorigin src="./assets/index-BUH_9EXj.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DxPHabE9.css">
+    <script type="module" crossorigin src="./assets/index-CkQYPfDU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DonxhaJF.css">
   </head>
   <body>
     <nav class="navbar">
@@ -36,12 +40,9 @@
       </label>
 
       <ul class="nav-menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre el Censo</a></li>
-        <li><a href="#">Resultados</a></li>
-        <li><a href="#">Historias del Censo</a></li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">¿Tienes preguntas?</a></li>
+        <li><a href="https://censoeconomiconacionalurbano.dane.gov.co/">Sobre el Censo</a></li>
+        <li><a href="https://censoeconomiconacionalurbano.dane.gov.co/resultados/">Resultados</a></li>
+        <li><a href="https://www.dane.gov.co/">Portal DANE</a></li>
       </ul>
     </nav>
 
@@ -792,7 +793,15 @@
             políticas que miren a Diana a los ojos y le abran la puerta a
             Alberto.
           </p>
-          <button class="btn-download" onclick="location.href='https://censoeconomiconacionalurbano.dane.gov.co/resultados/'">Consulte el Visor Interactivo</button>
+          <button
+            class="btn-download"
+            onclick="
+              location.href =
+                'https://censoeconomiconacionalurbano.dane.gov.co/resultados/'
+            "
+          >
+            Consulte el Visor Interactivo
+          </button>
         </div>
       </section>
       <section id="disclaimer">
@@ -812,24 +821,72 @@
     </main>
 
     <footer class="main-footer">
-      <img src="./assets/footer-eZwRPu9U.png" class="temp-footer" alt="temp footer" />
-      <div class="footer-grid">
-        <div>
-          <h4>Contacto</h4>
-          <p>Info de contacto...</p>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col col-12 col-md-6 col-xl-3 mb-4 mb-xl-0">
+            <h5><span class="footer-icon">phone_in_talk</span> CONTACTO</h5>
+            <p>
+              <strong>Conmutador:</strong><br />
+              (+57) 601 597 8300 o (+57) 601 597 8398
+            </p>
+            <p>
+              <strong>Línea gratuita de atención:</strong><br />
+              01 8000 912020
+            </p>
+            <p>
+              <strong>Correo electrónico:</strong><br /><a
+                href="mailto:contacto@dane.gov.co"
+                >contacto@dane.gov.co</a
+              >
+            </p>
+            <p>
+              <strong>Correo notificaciones judiciales:</strong><br /><a
+                href="mailto:notificaciones_judiciales@dane.gov.co"
+                >notificaciones_judiciales@dane.gov.co</a
+              >
+            </p>
+          </div>
+          <div class="col col-12 col-md-6 col-xl-3 mb-4 mb-xl-0">
+            <h5>
+              <span class="footer-icon">location_on</span> DIRECCIÓN
+            </h5>
+            <p>
+              Sede central DANE<br />
+              Carrera 59 No. 26-70 Interior I - CAN<br />
+              Bogotá D.C.<br />
+              Código postal: 111321<br />
+              Apartado Aéreo: 80043
+            </p>
+          </div>
+          <div class="col col-12 col-md-6 col-xl-3 mb-4 mb-xl-0">
+            <h5><span class="footer-icon">account_balance</span> LEGAL</h5>
+            <ul>
+              <li><a href="https://www.dane.gov.co/index.php/terrminos-y-condiciones-dane">Términos y condiciones</a></li>
+              <li><a href="https://www.dane.gov.co/index.php/tratamiento-de-datos-personales">Tratamiento de datos personales</a></li>
+              <li><a href="https://www.dane.gov.co/index.php/directorio-institucional-sedes-dane">Directorio institucional (Sedes DANE)</a></li>
+              <li><a href="https://www.dane.gov.co/index.php/accesibilidad">Accesibilidad</a></li>
+            </ul>
+          </div>
+          <div class="col col-12 col-md-6 col-xl-3 mb-4 mb-xl-0">
+            <h5>
+              <span class="footer-icon">account_circle</span> ATENCIÓN AL
+              CIUDADANO
+            </h5>
+            <p><strong>Horario de radicación de correspondencia:</strong></p>
+            <p>Lunes, miércoles y viernes: 10:00 a.m. - 1:00 p.m.</p>
+            <ul>
+              <li><a href="https://www.dane.gov.co/index.php/canales-de-atencion">Canales de atención</a></li>
+              <li><a href="https://www.dane.gov.co/index.php/mapa-del-sitio">Mapa del sitio</a></li>
+            </ul>
+            <img
+              src="./assets/logo-gov.co-2025-CRqmbhAN.png"
+              width="128"
+              alt="Logo gov.co"
+              class="d-block mt-4 mx-auto mx-md-0"
+            />
+          </div>
         </div>
-        <div>
-          <h4>Enlaces</h4>
-          <p>Links de interés...</p>
-        </div>
-        <div>
-          <h4>Líneas de atención</h4>
-          <p>018000...</p>
-        </div>
-        <div>
-          <h4>Políticas</h4>
-          <p>Privacidad...</p>
-        </div>
+        <div class="footer-bottom">© 2025 DANE</div>
       </div>
     </footer>
 
