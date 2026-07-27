@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprite Sheet Tester - PixiJS</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      canvas {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <script src="https://pixijs.download/v7.4.2/pixi.js"></script>
+  </head>
+  <body>
+    <div style="position: absolute; top: 10px; left: 10px; z-index: 100">
+      <label
+        for="character-select"
+        style="color: white; font-family: sans-serif"
+        >Seleccionar personaje:</label
+      >
+      <select id="character-select">
+        <option value="alberto-full-cycle-31.json">Alberto</option>
+        <option value="clara-full-cycle-31.json">Clara</option>
+        <option value="diana-full-cycle-31.json">Diana</option>
+        <option value="german-full-cycle-31.json">Germán</option>
+      </select>
+    </div>
+
+    <script>
+      // Configuración de velocidades y movimiento
+      const VERTICAL_ANIMATION_SPEED = 1.5;
+      const VERTICAL_MOVEMENT_SPEED = 1.5;
+      const HORIZONTAL_ANIMATION_SPEED = 1.5;
+      const HORIZONTAL_MOVEMENT_SPEED = 2.5;
+
+      // Inicializar aplicación PixiJS
+      const app = new PIXI.Application({
+        width: 800,
+        height: 600,
+        backgroundColor: 0xf8eddd,
+        resolution: window.devicePixelRatio || 1,
+        autoDensity: true,
+      });
+
+      function resetKeys() {
+        Object.keys(keys).forEach((key) => {
+          keys[key] = false;
+        });
+      }
+
+      document.body.appendChild(app.view);
+
+      // permitir que el canvas reciba foco
+      app.view.tabIndex = 0;
+      app.view.style.outline = "none";
+
+      // Reemplaza esta URL con la ruta local de tu imagen (ej. 'spritesheet.png')
+      let character;
+      let characterTextures = {}; // Declare characterTextures in a higher scope
+      const keys = {};
+
+      let characterPosition = {
+        x: app.screen.width / 2,
+        y: app.screen.height / 2,
+      };
+
+      window.addEventListener("keydown", (e) => {
+        keys[e.key] = true;
+      });
+      window.addEventListener("keyup", (e) => {
+        keys[e.key] = false;
+      });
+
+      function loadCharacter(spritesheetUrl) {
+        // Clear existing character if any
+        if (character) {
+          characterPosition.x = character.x;
+          characterPosition.y = character.y;
+          app.stage.removeChild(character);
+          character.destroy();
+          character = null; // Prevent ticker from trying to update a destroyed sprite
+        }
+
+        PIXI.Assets.load(spritesheetUrl)
+          .then((spritesheet) => {
+            characterTextures = spritesheet.animations;
+
+            // Start with the standing front animation
+            character = new PIXI.AnimatedSprite(characterTextures.standing_front);
+            character.anchor.set(0.5); // Center the anchor
+            character.x = characterPosition.x;
+            character.y = characterPosition.y;
+            character.animationSpeed = VERTICAL_ANIMATION_SPEED;
+            character.stop(); // Standing front by default, not playing
+
+            character.vx = 0;
+            character.vy = 0;
+            character.currentDirection = "front";
+            character.isWalking = false;
+
+            app.stage.addChild(character);
+          })
+          .catch((err) => {
+            console.error("Error cargando el spritesheet:", err);
+          });
+      }
+
+      app.ticker.add((delta) => {
+        if (!character) return; // Don't update if character isn't loaded yet
+
+        let moving = false;
+        character.vx = 0;
+        character.vy = 0;
+        let newDirection = "";
+
+        if (keys["ArrowUp"]) {
+          character.vy = -VERTICAL_MOVEMENT_SPEED;
+          newDirection = "back";
+          moving = true;
+        }
+        if (keys["ArrowDown"]) {
+          character.vy = VERTICAL_MOVEMENT_SPEED;
+          newDirection = "front";
+          moving = true;
+        }
+        if (keys["ArrowLeft"]) {
+          character.vx = -HORIZONTAL_MOVEMENT_SPEED;
+          newDirection = "left";
+          moving = true;
+        }
+        if (keys["ArrowRight"]) {
+          character.vx = HORIZONTAL_MOVEMENT_SPEED;
+          newDirection = "right";
+          moving = true;
+        }
+
+        if (moving) {
+          // If direction changed, or we just started walking
+          if (character.currentDirection !== newDirection || !character.isWalking) {
+            character.textures = characterTextures["walk_" + newDirection];
+            character.animationSpeed =
+              newDirection === "front" || newDirection === "back"
+                ? VERTICAL_ANIMATION_SPEED
+                : HORIZONTAL_ANIMATION_SPEED;
+            character.play();
+            character.currentDirection = newDirection;
+            character.isWalking = true;
+          }
+        } else {
+          // If we were walking and now stopped
+          if (character.isWalking) {
+            character.textures = characterTextures["standing_" + character.currentDirection];
+            character.stop();
+            character.isWalking = false;
+          }
+        }
+
+        character.x += character.vx * delta;
+        character.y += character.vy * delta;
+
+        // Keep character within screen bounds
+        character.x = Math.max(
+          0 + character.width / 2,
+          Math.min(app.screen.width - character.width / 2, character.x),
+        );
+        character.y = Math.max(
+          0 + character.height / 2,
+          Math.min(app.screen.height - character.height / 2, character.y),
+        );
+      });
+
+      // Initial load and event listener for select menu
+      const characterSelect = document.getElementById("character-select");
+      characterSelect.addEventListener("change", (event) => {
+        resetKeys();
+        loadCharacter(event.target.value);
+        event.target.blur();
+        app.view.focus();
+      });
+
+      // Load the default character on startup
+      loadCharacter(characterSelect.value);
+    </script>
+  </body>
+</html>
