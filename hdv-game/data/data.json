@@ -1,0 +1,257 @@
+{
+    "project_name": "Historias de Vida",
+    "project_tagline": "¿Qué crees que se necesita para montar un negocio en colombia?",
+    "project_instructions": "Averígualo con Diana, Germán, Clara o Alberto, propietarias y propietarios de negocios caracterizados en el CENU",
+    "characters": [
+        {
+            "slug": "alberto",
+            "name": "Alberto",
+            "bio": "Alberto tiene 70 años y ya tiene todo planeado para abrir un fruver"
+        },
+        {
+            "slug": "clara",
+            "name": "Clara",
+            "bio": "Clara tiene 68 años y tiene en mente poner un local de postres"
+        },
+        {
+            "slug": "diana",
+            "name": "Diana",
+            "bio": "Diana tiene 43 años, se autorreconoce como mujer negra y quiere montar una peluquería"
+        },
+        {
+            "slug": "german",
+            "name": "Germán",
+            "bio": "Germán tiene 41 años y está listo para arrancar con un café"
+        }
+    ],
+    "secciones": [
+        {
+            "type": "question",
+            "name": "Motivación",
+            "description": "Por medio de la cuál, se explora la razón para montar un negocio en Colombia",
+            "intro": "Lo primero que vamos a explorar es cuáles son las motivaciones de nuestros personajes para crear un negocio: ¿oportunidad, necesidad de generar ingresos, ejercer un oficio?",
+            "question": "¿Cuál crees que es su principal motivación para crear un negocio?",
+            "options": [
+                {
+                    "option": "Oportunidad de negocio",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>Es posible que un hombre adulto como Alberto monte un fruver porque vio allí una oportunidad de negocio. 3 de cada 10 hombres como Alberto tienen esta como su opción principal.</p><p>Sin embargo, la motivación reportada con mayor frecuencia para perfiles como el de Alberto es iniciar un negocio porque en ese momento es la única manera de generar ingresos (4 de cada 10).</p>",
+                            "image": "option__0003_motivation_oportunity.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>Es posible que una mujer como Clara monte un local de postres porque vio allí una oportunidad de negocio. 3 de cada 10 propietarias adultas mayores como Clara tienen esta como su opción principal.</p><p>Sin embargo, la motivación reportada con mayor frecuencia para perfiles como el de Clara es iniciar un negocio porque en ese momento es la única manera de generar ingresos (4 de cada 10).</p>",
+                            "image": "option__0003_motivation_oportunity.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>Es posible que una persona como Diana monte una peluquería porque vio allí una oportunidad de negocio. Pero esta sería su segunda opción.</p><p>La opción reportada con mayor frecuencia para las mujeres afrodescendientes es iniciar un negocio porque en ese momento es la única manera de generar ingresos.</p>",
+                            "image": "option__0003_motivation_oportunity.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>Esta es la motivación principal de Germán para motar su café, así como para perfiles como el suyo, con un 39%. Le siguen quienes lo vieron como su única alternativa de ingresos, con un 33%.</p>",
+                            "image": "option__0003_motivation_oportunity.png"
+                        }
+                    ]
+                },
+                {
+                    "option": "Única alternativa de ingresos",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>Esta es la motivación principal de Alberto para poner su fruver, como lo es también para los  propietarios adultos mayores como él, con un 42%. Le siguen quienes lo vieron una oportunidad de negocio, con un 30%.</p>",
+                            "image": "option__0004_motivation_no_choices.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>Esta es la motivación principal de Clara para poner su tienda de postres, como lo es también para las propietarias adultas mayores como ella, con un 45%. Le siguen quienes lo vieron como una oportunidad de negocio, con un 29%.</p>",
+                            "image": "option__0004_motivation_no_choices.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>Esta es la motivación principal de Diana para montar su peluquería, como lo es también para las propietarias afrodescendientes, con un 48%. Le siguen quienes ven allí una oportunidad de negocio, con un 29%.</p>",
+                            "image": "option__0004_motivation_no_choices.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>El 33% de los propietarios con el perfil de Germán crean su negocio porque lo ven como su única alternativa de ingresos en el momento.</p><p>No obstante, la motivación principal para propietarios como Germán es haber visto una oportunidad de negocio (39%).</p>",
+                            "image": "option__0004_motivation_no_choices.png"
+                        }
+                    ]
+                },
+                {
+                    "option": "Ejercer oficio, carrera o profesión",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>1 de cada 10 hombres como Alberto tendría esta como su motivación principal para poner un fruver. La mayoría lo haría porque es la única alternativa de ingresos en el momento (4 de cada 10).</p>",
+                            "image": "option__0002_motivation_profession.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p> El 5% de propietarias adultas mayores de un negocio reportó esta como su motivación principal para crear un negocio.</p><p>La motivación principal para las mujeres como Clara es la de crear un negocio porque en ese momento es la única alternativa para genrar ingresos (45%).</p>",
+                            "image": "option__0002_motivation_profession.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p> El 5% de mujeres afrodescendientes propietarias de un negocio reportó esta como su motivación principal para crear un negocio.</p><p>No obstante, la motivación principal para la mayoría de las mujeres como Diana es la de crear un negocio porque en ese momento es la única alternativa para generar ingresos (48%).</p>",
+                            "image": "option__0002_motivation_profession.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>Germán podría iniciar su café como una manera de ejercer su oficio, carrera o profesión, como el 10% de propietarios hombres caracterizados. </p><p>El perfíl de Germán es el que más alto puntúa en esta opción por encima de otros hombres y mujeres con y sin pertenencia étnico-racial.</p>",
+                            "image": "option__0002_motivation_profession.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "name": "Fondos",
+            "description": "Por medio de la cuál, se explora el origen de los recursos para montar un negocio",
+            "intro": "Ahora vamos a ver si nuestros personajes tienen los recursos disponibles para poner el negocio: ¿tendrán ahorros, pedirán un préstamo?",
+            "question": "¿Cuál será su fuente inicial de recursos?",
+            "options": [
+                {
+                    "option": "Ahorros personales",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>Los ahorros personales son la principal fuente de recursos para el fruver de Alberto. Este es el caso del 69% de los propietaros hombres adultos mayores como el.</p><p>Dependiendo de qué tanto tenga ahorrado, podrá decidir cómo empezar a montar su negocio.</p>",
+                            "image": "option__0009_source_personal.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>Los ahorros personales son la principal fuente de recursos para la tienda de postres de Clara. Este es el caso del 62% de las propietarias adultas mayores como ella.</p><p>Dependiendo de qué tanto tenga ahorrado, podrá decidir cómo empezar a montar su negocio.</p>",
+                            "image": "option__0009_source_personal.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>Los ahorros personales son la principal fuente de recursos para la peluquería de Diana. Este también es el caso del 59% de las propietarias afrodescedientes.</p><p>Dependiendo de qué tanto tenga ahorrado, podrá decidir cómo empezar a montar su peluquería.</p>",
+                            "image": "option__0009_source_personal.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>Los ahorros personales son la principal fuente de recursos para el café de Germán. Este es el caso del 58% de los propietarios sin pertenencia étnico-racial como Germán.</p><p>Dependiendo de qué tanto tenga ahorrado, podrá decidir cómo empezar a montar su negocio.</p>",
+                            "image": "option__0009_source_personal.png"
+                        }
+                    ]
+                },
+                {
+                    "option": "Préstamo bancario",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>El 15% de los propietarios hombres adultos mayores inició su negocio con recursos provenientes de un préstamo bancario, así que esta es una opción para Alberto.</p><p>Sin embargo, el 69% montó su negocio con ahorros personales.</p>"
+                            ,
+                            "image": "option__0008_source_bank.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>El 19% de las propietarias mujeres adultas mayores inició su negocio con recursos provenientes de un préstamo bancario, así que esta es una opción para Clara.</p><p>Sin embargo, el 62% montó su negocio con ahorros personales.</p>",
+                            "image": "option__0008_source_bank.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>El 21% de las propietarias afrodescendientes inició su negocio con recursos provenientes de un préstamo bancario, así que esta es una opción para Diana.</p><p>Sin embargo, el 59% de ellas montó su negocio con ahorros personales.</p>",
+                            "image": "option__0008_source_bank.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>El 23% de los propietarios hombres inició su negocio con recursos provenientes de un préstamo bancario, así que esta es una opción para Germán.</p><p>Sin embargo, el 58% montó su negocio con ahorros personales.</p><p>De nuestros personajes, Germán es quien tiene más opciones de acceder a un préstamo bancario. Un poco por encima de Diana (20%) y algo más que Clara (19%)  y Alberto (15%).</p>",
+                            "image": "option__0008_source_bank.png"
+                        }
+                    ]
+                },
+                {
+                    "option": "Prestamistas",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>El 2,2% de los propietarios adultos mayores como Alberto reportaron esta fuente de recursos inicial.</p><p>Es su cuarta opción, luego de ahorros, préstamos bancarios y préstamos familiares.</p>",
+                            "image": "option__0014_source_loans.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>El 2,8% de las propietarias adultas mayores como Clara reportaron esta fuente de recursos incial.</p><p>Es su cuarta opción, luego de ahorros, préstamos bancarios y préstamos familiares.</p>",
+                            "image": "option__0014_source_loans.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>El 5,2% de propietarias afrodescendientes como Diana acudió a prestamistas para conseguir sus recursos iniciales.</p><p>Para otro grupo de la población afrodescendiente, las mujeres (8,8%) y hombres (11,5%) palenqueros, propietarios de negocios urbanos, fueron quienes más repotaron esta fuente de recursos entre propietarios con y sin pertenencia étnico-racial.</p>",
+                            "image": "option__0014_source_loans.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>El 2,6% de los propietarios como Germán reportaron esta fuente de recursos inicial.</p><p>Es su cuarta opción, luego de ahorros, préstamos bancarios y préstamos familiares.</p>",
+                            "image": "option__0014_source_loans.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "name": "Ubicación",
+            "description": "Por medio de la cuál, se explora dónde se ubican los negocios en Colombia",
+            "intro": "Finalmente, ¿dónde podrán ubicar sus negocios? ¿En un local, en su vivienda?",
+            "question": "¿Dónde pondrán el negocio?",
+            "options": [
+                {
+                    "option": "Local",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>La primera opción para alberto es ubicar su fruver en un local, como el 50% de los propietarios adultos mayores.</p><p>A medida que avanzan los años, las posibilidades de poner el negocio en un local disminuyen.</p>",
+                            "image": "option__0007_shop_fruits.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>La primera opción para Clara es ubicar su tienda de postres en un local, como el 46% de las propietarias adultas mayores.</p><p>A medida que avanzan los años, las posibilidades de poner el negocio en un local disminuyen.</p>",
+                            "image": "option__0005_shop_desserts.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>El 37% de las propietarias afrodescendientes como Diana ubican su negocio en un local.</p><p>Aunque esta es una opción para Diana, tiene menos posibilidades de poner su negocio en un local que otras mujeres sin pertenencia étnico-racial (58%), que los hombres afrodescendientes (51%) y que los hombres sin pertenencia étnico-racial (66%).</p>",
+                            "image": "option__0006_shop_hair_saloon.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>La primera opción para Germán es ubicar su café en un local, como el  66% de los propietarios sin pertenencia étnico-racial.</p><p>Germán tiene más posibilidades de ubicar su negocio en un local que la mujeres propietarias sin pertenencia étnico-racial (58%) y que el resto de propietarias y propietarios con pertenencia étnico-racial.</p>",
+                            "image": "option__0001_shop_coffee.png"
+                        }
+                    ]
+                },
+                {
+                    "option": "Vivienda",
+                    "answers": [
+                        {
+                            "character": "alberto",
+                            "answer": "<p>El 20% de los propietarios adultos mayores como Alberto ubica su negocio en la vivienda.</p><p>A medida que avanzan los años, las posibilidades de poner el negocio en la vivienda aumentan, aunque más para Clara que para Alberto.</p>",
+                            "image": "option__0013_house_fruits.png"
+                        },
+                        {
+                            "character": "clara",
+                            "answer": "<p>La primera opción para Clara es ubicar su tienda de postres en un local, como el 46% de las propietarias adultas mayores.</p><p>A medida que avanzan los años, las posibilidades de poner el negocio en un local disminuyen.</p>",
+                            "image": "option__0011_house_desserts.png"
+                        },
+                        {
+                            "character": "diana",
+                            "answer": "<p>La primera opción para Diana es poner su peluquería en su vivienda, como el 38% de las propietarias afrodescendientes.</p><p>Las mujeres negras son el único grupo pobacional de propietarias que tiene esta como su opción principal. El resto, aunque cerca, reportan como opción principal un local.</p>",
+                            "image": "option__0012_house_hair_saloon.png"
+                        },
+                        {
+                            "character": "german",
+                            "answer": "<p>El 33% de las propietarias adultas mayores como Clara ubica su negocio en la vivienda.</p><p>A medida que avanzan los años, las posibilidades de poner el negocio en la vivienda aumentan, aunque más para Clara que para Alberto.</p>",
+                            "image": "option__0000_house_coffee.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

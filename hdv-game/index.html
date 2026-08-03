@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historias de Vida - DANE</title>
+    <script type="module" crossorigin src="./assets/index-DZVndFbP.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/Geometry-BT4_Anyd.js">
+    <link rel="modulepreload" crossorigin href="./assets/Filter-De0MnOgg.js">
+    <link rel="modulepreload" crossorigin href="./assets/canvasUtils-hY55CfUt.js">
+    <link rel="modulepreload" crossorigin href="./assets/Cache-DuLSTiLe.js">
+    <link rel="modulepreload" crossorigin href="./assets/init-D1hrEsfH.js">
+    <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-hVfJ1r2p.js">
+    <link rel="modulepreload" crossorigin href="./assets/RenderTargetSystem-0-wwTyfn.js">
+    <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-BbL4Bqcj.js">
+    <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-C-6QM2-G.js">
+    <link rel="modulepreload" crossorigin href="./assets/CanvasPool-5ZBneYhJ.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CHIvSmWJ.css">
+  </head>
+  <body>
+    <!-- Indicador de avance sticky / fijo en la parte superior -->
+    <header class="progress-header">
+      <div class="progress-logo-container">
+        <img src="./assets/logo_dane-j9q-b0-3.svg" alt="DANE" class="header-logo logo-dane" />
+        <span class="logo-separator"></span>
+        <img src="./assets/logo_censo-xvmHsZx9.svg" alt="Censo Económico" class="header-logo logo-censo" />
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-nodes">
+          <div class="progress-node active" data-index="0" id="node-0">
+            <span class="node-dot"></span>
+            <span class="node-label">Inicio</span>
+          </div>
+          <div class="progress-node" data-index="1" id="node-1">
+            <span class="node-dot"></span>
+            <span class="node-label">Motivación</span>
+          </div>
+          <div class="progress-node" data-index="2" id="node-2">
+            <span class="node-dot"></span>
+            <span class="node-label">Recursos</span>
+          </div>
+          <div class="progress-node" data-index="3" id="node-3">
+            <span class="node-dot"></span>
+            <span class="node-label">Ubicación</span>
+          </div>
+          <div class="progress-node" data-index="4" id="node-4">
+            <span class="node-dot"></span>
+            <span class="node-label">Resultados</span>
+          </div>
+        </div>
+        <div class="progress-line-bg">
+          <div class="progress-line-fill" id="progress-line"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenedor principal con scroll horizontal -->
+    <main id="slides-container" class="locked">
+      
+      <!-- SECCIÓN 1: INTRODUCCIÓN -->
+      <section id="slide-intro" class="slide active-slide">
+        <div class="slide-content">
+          <div class="slide-left">
+            <h1 class="slide-title" id="project-title">Historias de Vida</h1>
+            <p class="slide-tagline" id="project-tagline">Cargando...</p>
+            <div class="slide-description" id="project-instructions">
+              Cargando instrucciones...
+            </div>
+          </div>
+          <div class="slide-right">
+            <h2 class="section-subtitle">Elige tu personaje</h2>
+            <div class="character-selector" id="characters-list">
+              <!-- Cargado dinámicamente desde data.json -->
+            </div>
+            <div class="action-footer">
+              <button id="btn-start" class="btn btn-primary" disabled>Comenzar recorrido</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: PREGUNTA 1 (MOTIVACIÓN) -->
+      <section id="slide-q1" class="slide">
+        <div class="slide-content">
+          <div class="slide-left">
+            <div class="character-walkway-container" id="walkway-q1">
+              <!-- Pixi Canvas o DIV provisional del personaje caminará aquí -->
+              <div class="provisional-character-div" id="char-marker-q1"></div>
+            </div>
+            <span class="section-badge">Paso 1 de 3</span>
+            <h1 class="slide-title" id="q1-title">Motivación</h1>
+            <p class="slide-question" id="q1-question">Cargando pregunta...</p>
+          </div>
+          <div class="slide-right">
+            <div class="options-container" id="q1-options">
+              <!-- Cargado dinámicamente -->
+            </div>
+            <div class="action-footer">
+              <button id="btn-next-q1" class="btn btn-primary" disabled>Continuar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: PREGUNTA 2 (FONDOS) -->
+      <section id="slide-q2" class="slide">
+        <div class="slide-content">
+          <div class="slide-left">
+            <div class="character-walkway-container" id="walkway-q2">
+              <div class="provisional-character-div" id="char-marker-q2"></div>
+            </div>
+            <span class="section-badge">Paso 2 de 3</span>
+            <h1 class="slide-title" id="q2-title">Recursos</h1>
+            <p class="slide-question" id="q2-question">Cargando pregunta...</p>
+          </div>
+          <div class="slide-right">
+            <div class="options-container" id="q2-options">
+              <!-- Cargado dinámicamente -->
+            </div>
+            <div class="action-footer">
+              <button id="btn-next-q2" class="btn btn-primary" disabled>Continuar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: PREGUNTA 3 (UBICACIÓN) -->
+      <section id="slide-q3" class="slide">
+        <div class="slide-content">
+          <div class="slide-left">
+            <div class="character-walkway-container" id="walkway-q3">
+              <div class="provisional-character-div" id="char-marker-q3"></div>
+            </div>
+            <span class="section-badge">Paso 3 de 3</span>
+            <h1 class="slide-title" id="q3-title">Ubicación</h1>
+            <p class="slide-question" id="q3-question">Cargando pregunta...</p>
+          </div>
+          <div class="slide-right">
+            <div class="options-container" id="q3-options">
+              <!-- Cargado dinámicamente -->
+            </div>
+            <div class="action-footer">
+              <button id="btn-next-q3" class="btn btn-primary" disabled>Continuar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: RESULTADOS Y CONCLUSIÓN -->
+      <section id="slide-results" class="slide">
+        <div class="slide-content">
+          <div class="slide-left">
+            <span class="section-badge">Resumen</span>
+            <h1 class="slide-title" id="results-title">Mapa de tus decisiones</h1>
+            <div class="flowchart-container" id="flowchart">
+              <!-- Diagrama de flujo de las 3 preguntas con respuestas seleccionadas -->
+            </div>
+            <div class="action-footer">
+              <button id="btn-restart" class="btn btn-secondary">Reiniciar recorrido</button>
+            </div>
+          </div>
+          <div class="slide-right">
+            <h2 class="section-subtitle" id="results-details-title">Detalle de tu decisión</h2>
+            <div class="results-conclusion-box" id="results-details-content">
+              <!-- Cargado dinámicamente al hacer click en las tarjetas del flujograma -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- VENTANA MODAL PARA CONTENIDO ADICIONAL -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div class="modal-char-profile">
+            <div class="modal-char-avatar" id="modal-avatar"></div>
+            <div>
+              <h3 class="modal-char-name" id="modal-char-name">Personaje</h3>
+              <p class="modal-category" id="modal-step-name">Motivación</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body" id="modal-content">
+          <!-- Información dinámica según elección -->
+        </div>
+        <div class="modal-footer">
+          <button id="btn-modal-next" class="btn btn-primary">Siguiente</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script de inicialización principal -->
+  </body>
+</html>
